@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>My TODO</title>
+        <script type="module" src="TODO.js"></script>
+        <style>
+            button:disabled {
+                transition: color 0.5s ease-out;
+            }
+
+            button:enabled {
+                transition: color 0.5s ease-out;
+                cursor: pointer;
+            }
+
+        .done{
+            text-decoration: line-through;
+            }
+        </style>
+
+    </head>
+    <tbody>
+        <h1>My TODO</h1>
+        <div>
+            <label for="todo-input">New TODO</label>
+            <input type="text" id="todo-input" />
+            <button id="add-todo-btn" disabled>Add</button>
+        </div>
+        <ul id="TODO-list"></ul>
+    </tbody>
+</html>
