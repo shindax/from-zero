@@ -6,7 +6,7 @@ export default{
 	plugins: [cleanup()],
 	output: [
      {
-	file: "dist/from-zero.js",
+	file: "dist/nano-kit.js",
 	format: "esm",
 	plugins: [filesize()],
      }
