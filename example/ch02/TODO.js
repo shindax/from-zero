@@ -130,11 +130,10 @@ function removeTodo(index)
 
 function updateTodo(index, description)
 {
-    TODO[index] = description
-    const todo = renderTodoInReadMode(description)
+    TODO[index].description = description
+    const todo = renderTodoInReadMode(TODO[index])
     TODOList.replaceChild(todo, TODOList.childNodes[index])
 }
-
 
 function cons(arg)
 {
